@@ -6,7 +6,6 @@ This project builds a time series forecasting pipeline for monthly natural gas p
 
 #### **Table of Contents**
 - [Introduction](#introduction)  
-- [Dataset](#dataset)  
 - [Data Preprocessing and Feature Engineering](#data-preprocessing-and-feature-engineering)  
 - [Model Building and Evaluation](#model-building-and-evaluation)  
 - [Results and Analysis](#results-and-analysis)  
