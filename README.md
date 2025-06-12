@@ -157,6 +157,30 @@ We conduct thorough diagnostics (stationarity tests, ACF/PACF, residual checks) 
 - statsmodels  
 - jupyterlab or Collab notebook  
 
+## How to Run
+
+- **Google Colab**:  
+  1. Go to [Google Colab](https://colab.research.google.com).  
+  2. Choose “GitHub” and paste your repo URL (or notebook path) or download the file and upload the notebook and data in collab.  
+  3. Open the notebook and click “Run all” to execute all cells.
+
+- **Jupyter Notebook / JupyterLab**:  
+  1. Clone or download the repository to your machine.  
+  2. Ensure dependencies are installed  
+  3. In the project folder, launch Jupyter:  
+     ```bash
+     jupyter notebook
+     ```  
+     or  
+     ```bash
+     jupyter lab
+     ```  
+  4. Open the notebook (e.g., `JP_Morgan_Time_series_task.ipynb`) and select “Run All Cells.”
+
+- **Standalone Script** (if you exported key steps into a `.py` file):  
+  ```bash
+  python main.py
+
 
 #### **Acknowledgements**
   - Dataset: Thanks to the J.P.Morgan& Chase for providing the task and datset.
