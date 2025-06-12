@@ -54,15 +54,16 @@ We conduct thorough diagnostics (stationarity tests, ACF/PACF, residual checks) 
       - 3 months,  "Quarterly"for Short term momentum
       - 6 months for balancing between short reactivity and long term stability  in price.
       - 12 months "Annually" for broad market seasonal price cycle.
-  - Compute EMAs on the price series:  
- ```python
+  - Compute EMAs on the price series:
+    `python
      Natgas['EMA_3'] = Natgas['Prices'].ewm(span=3, adjust=False).mean()
      Natgas['EMA_6'] = Natgas['Prices'].ewm(span=6, adjust=False).mean()
      Natgas['EMA_12'] = Natgas['Prices'].ewm(span=12, adjust=False).mean()
-     ```
+     `
    - Drop initial NaNs introduced by EMA calculation.
 
-5. **Stationarity Check**  
+
+ 5. **Stationarity Check**
 
   - Conduct Augmented Dickey-Fuller (ADF) test on the raw monthly price series to assess non-stationarity.
   - Compute the first difference of the price series (`Price_diff = Prices.diff()`) and drop NaNs.
